@@ -1,0 +1,16 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- House body (a square) with soft yellow color -->
+  <rect x="8" y="12" width="16" height="14" fill="#F1C27D" stroke="#8B4513" stroke-width="0.2"/>
+  
+  <!-- Roof (a triangle) with soft brown color -->
+  <polygon points="8,12 16,4 24,12" fill="#8B4513" stroke="#6B3F2A" stroke-width="0.2"/>
+  
+  <!-- Door (larger, moved right) -->
+  <rect x="17" y="16" width="5" height="10" fill="#6B3F2A" stroke="#4B2C20" stroke-width="0.2"/>
+  
+  <!-- Door knob (small circle) -->
+  <circle cx="21" cy="22" r="0.5" fill="#F1C27D" stroke="#8B4513" stroke-width="0.2"/>
+  
+  <!-- Window (wider, aligned with door height) -->
+  <rect x="10" y="16" width="4" height="4" fill="white" stroke="#8B4513" stroke-width="0.2"/>  
+</svg>

@@ -1,27 +1,26 @@
-<!-- src/App.vue -->
 <template>
   <div id="app">
-    <SideBar />
-    <main class="content">
-      <router-view />
-    </main>
+    <Header />
+    <router-view />
+    <Footer />
   </div>
 </template>
 
-<script setup>
-import SideBar from './components/SideBar.vue';
+<script lang="ts">
+import { defineComponent } from 'vue';
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+
+export default defineComponent({
+  components: {
+    Header,
+    Footer,
+  },
+});
 </script>
 
 <style>
 #app {
-  display: flex;
-  background-color: #fdfbe2;
-  height: 100vh;
-}
-
-.content {
-  flex-grow: 1;
-  padding: 2rem;
-  background-color: #fff;
+  font-family: Arial, sans-serif;
 }
 </style>
