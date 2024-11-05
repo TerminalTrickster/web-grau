@@ -1,26 +1,10 @@
 <template>
-  <div id="app">
-    <Header />
-    <router-view />
-    <Footer />
+  <div>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
-
-export default defineComponent({
-  components: {
-    Header,
-    Footer,
-  },
-});
+<script setup lang="ts">
 </script>
 
 <style>
-#app {
-  font-family: Arial, sans-serif;
-}
 </style>
