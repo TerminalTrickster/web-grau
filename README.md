@@ -9,9 +9,3 @@
 - Map View with Buttons for Google Maps Navigation - Walking / Car / Train & Bus
 - Footnote rooting to "Impressum" and "AGB"
 - Links
-
-türkis #7e9890
-hellbraun #9a6f60
-burgundy #481623
-
-https://www.lesrosesduvercors.com/
