@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import AboutView from '../components/views/AboutView.vue';
 import AgbView from '../components/views/AgbView.vue';
 import ImpressumView from '../components/views/ImpressumView.vue';
-import LinksView from '../components/views/LinksView.vue';
+import TourismusView from '../components/views/TourismusView.vue';
 import MainView from '../components/views/MainView.vue';
 import RoomsView from '../components/views/RoomsView.vue';
 
@@ -29,9 +29,9 @@ const routes = [
     component: ImpressumView, // Impressum Seite
   },
   {
-    path: '/links',
-    name: 'Links',
-    component: LinksView, // Links Seite
+    path: '/tourismus',
+    name: 'Tourismus',
+    component: TourismusView, // Links Seite
   },
   {
     path: '/rooms',

@@ -1,179 +1,119 @@
 <template>
-    <div class="main-container">
-        <!-- Left side text container -->
-        <div class="text-container">
-            <p>Es freut uns, dass Sie den Weg zu unserer Pension gefunden haben. Wir wünschen Ihnen einen angenehmen
-                Aufenthalt und würden uns freuen, Sie in unserem Haus begrüßen zu dürfen.</p>
+    <div class="welcome-container">
+        <!-- Welcome Text and Image Section -->
+        <div class="intro-section">
+
+            <div class="intro-text">
+                <h1>Herzlich Willkommen</h1>
+                <h2>in der Fränkischen Schweiz</h2>
+                <img src="../../../res/HausFront.JPG" alt="Haus Front" class="intro-image" />
+                <p>
+                    Es freut uns, dass Sie den Weg zu unserer familiengeführten Pension gefunden haben. <br>
+                    Wir wünschen Ihnen einen angenehmen Aufenthalt und würden uns freuen,
+                    Sie in unserem Haus begrüßen zu dürfen.
+                </p>
+                <h3>Ihre Pension Grau</h3>
+            </div>
         </div>
 
-        <!-- Right side image carousel -->
-        <div class="carousel">
-            <div class="carousel-images" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-                <img class="hero" src="../../../res/HausFront2.jpeg" alt="Haus Front 1" />
-                <img class="hero" src="../../../res/HausFrontGarten.JPG" alt="Haus Front 2" />
-                <img class="hero" src="../../../res/HausFrontSchild.JPG" alt="Haus Front 3" />
-                <img class="hero" src="../../../res/HausWaldLage.JPG" alt="Haus Front 3" />
-            </div>
-            <!-- Navigation buttons -->
-            <button class="prev" @click="moveToPrev">‹</button>
-            <button class="next" @click="moveToNext">›</button>
-        </div>
+        <!-- Optional: Add more sections here -->
     </div>
 </template>
 
 <script>
-export default {
-    name: 'RoomsView',
-    data() {
-        return {
-            currentIndex: 0,
-            totalImages: 3,
-        };
-    },
-    methods: {
-        moveToPrev() {
-            this.currentIndex = (this.currentIndex === 0) ? this.totalImages - 1 : this.currentIndex - 1;
-        },
-        moveToNext() {
-            this.currentIndex = (this.currentIndex === this.totalImages - 1) ? 0 : this.currentIndex + 1;
-        },
-    },
-};
 </script>
 
 <style scoped>
-/* Prevent vertical and horizontal scrollbars */
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.main-container {
+/* Style the main welcome container */
+.welcome-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    /* Ensure padding doesn't cause overflow */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Welcome section with image and text */
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 2rem;
     overflow: hidden;
 }
 
-.text-container {
-    width: 45%;
-    padding: 20px;
-    box-sizing: border-box;
-    /* Ensure padding doesn't cause overflow */
-}
-
-.text-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.text-container h2 {
-    font-size: 2rem;
-    color: #555;
-}
-
-.text-container p {
-    font-size: 1.1rem;
+/* Styling for the intro image */
+.intro-image {
+    width: 100%;
+    max-width: 800px;
+    /* Ensure the image is not too large */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
     margin-bottom: 1.5rem;
 }
 
-.text-container h3 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+/* Text section styling */
+.intro-text {
     color: #333;
 }
 
-.features {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
+.intro-text h1 {
+    font-size: 2.5rem;
+    color: #008c05;
+    margin: 0;
+    font-weight: 700;
 }
 
-.feature-item {
-    width: 45%;
-    text-align: center;
+.intro-text h2 {
+    font-size: 2rem;
+    color: #007d03;
+    margin-top: 0.5rem;
 }
 
-.feature-item img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+.intro-text p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 1.6;
 }
 
-.feature-item p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.carousel {
-    width: 50%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel-images {
-    display: flex;
-    flex-direction: row;
-    transition: transform 0.5s ease-in-out;
-}
-
-.hero {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
+.intro-text h3 {
     font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 10;
+    margin-top: 1.5rem;
+    color: #008c05;
+    font-weight: 600;
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-        align-items: center;
+    .intro-section {
+        padding: 1.5rem;
+        max-width: 100%;
     }
 
-    .text-container {
-        width: 80%;
-        text-align: center;
+    .intro-text h1 {
+        font-size: 2rem;
     }
 
-    .carousel {
-        width: 80%;
+    .intro-text h2 {
+        font-size: 1.5rem;
     }
 
-    .hero {
-        width: 100%;
+    .intro-text p {
+        font-size: 1rem;
+    }
+
+    .intro-text h3 {
+        font-size: 1.2rem;
     }
 }
 </style>

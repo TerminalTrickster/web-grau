@@ -1,172 +1,228 @@
 <template>
     <div class="rooms-view">
         <div class="main-container">
-            <!-- Left side text container -->
-            <div class="text-container">
-                <h1>Zimmer & Preise</h1>
-                <p>
-                    Entdecken Sie unsere gemütlichen Zimmer, die Ihnen einen angenehmen Aufenthalt in der Fränkischen
-                    Schweiz bieten. Unsere Zimmer sind komfortabel und gut ausgestattet, damit Sie sich wie zu Hause
-                    fühlen.
-                </p>
-                <h3>Preise</h3>
-                <p>Unsere Preise variieren je nach Saison und Zimmerkategorie. Kontaktieren Sie uns für aktuelle Preise
-                    und Verfügbarkeiten.</p>
+            <h1>Zimmer Preise 2024</h1>
+            <div class="info">
+                <p><strong>pro Person und Nacht</strong></p>
+                <p><strong>Check-In:</strong> 14:00 Uhr - 20:00 Uhr</p>
+                <p><strong>Check-Out:</strong> bis 10:30 Uhr</p>
+                <p><strong>!! ausschließlich Barzahlung möglich !!</strong></p>
             </div>
 
-            <!-- Right side image carousel -->
-            <div class="carousel">
-                <div class="carousel-images" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-                    <img class="hero" src="../../../res/EtagenBad.JPG" alt="Haus Front 1" />
-                    <img class="hero" src="../../../res/EtagenBad2.jpeg" alt="Haus Front 2" />
-                    <img class="hero" src="../../../res/EtagenWc.jpg" alt="Haus Front 3" />
-                    <img class="hero" src="../../../res/Frühstücksraum.jpg" alt="Frühstücksraum 1" />
-                    <img class="hero" src="../../../res/Frühstücksraum2.jpg" alt="Frühstücksraum 2" />
-                    <img class="hero" src="../../../res/Zimmer2.JPG" alt="Zimmer 2" />
-                    <img class="hero" src="../../../res/Zimmer3_2.JPG" alt="Zimmer 3.2" />
-                    <img class="hero" src="../../../res/Zimmer3.JPG" alt="Zimmer 3" />
-                    <img class="hero" src="../../../res/Zimmer4.JPG" alt="Zimmer 4" />
-                    <img class="hero" src="../../../res/Zimmer5.JPG" alt="Zimmer 5" />
-                    <img class="hero" src="../../../res/Zimmer6.JPG" alt="Zimmer 6" />
-                    <img class="hero" src="../../../res/Zimmer6_2.JPG" alt="Zimmer 6.2" />
+            <section class="room-type">
+                <h3>2 Doppelzimmer (Zimmer 2 und 4)</h3>
+                <BedIcon class="icon" :size="40" />
+                <div class="room-description">
+                    <p>mit WC/Dusche/TV/Balkon/Föhn/Handtücher <br> (Zimmer 4 mit Schlafcouch für Kinder)</p>
+                    <div class="pricing">
+                        <p><strong>bis 3 Tage:</strong> 30,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 28,00 €</p>
+                    </div>
                 </div>
-                <!-- Navigation buttons -->
-                <button class="prev" @click="moveToPrev">‹</button>
-                <button class="next" @click="moveToNext">›</button>
+            </section>
+
+            <section class="room-type">
+                <h3>1 Doppelzimmer (Zimmer 3)</h3>
+                <BedIcon class="icon" :size="40" />
+                <div class="room-description">
+                    <p>mit Etagendusche/TV/Balkon/Föhn/Handtücher und Waschgelegenheit im Zimmer</p>
+                    <div class="pricing">
+                        <p><strong>bis 3 Tage:</strong> 29,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 27,00 €</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="room-type">
+                <h3>2 Einzelzimmer (Zimmer 1 und 5)</h3>
+                <BedIcon class="icon" :size="40" />
+                <div class="room-description">
+                    <p>mit Etagendusche/TV/Handtücher und Waschgelegenheit im Zimmer</p>
+                    <div class="pricing">
+                        <p><strong>bis 3 Tage:</strong> 29,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 27,00 €</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="additional-info">
+                <h3>Zusätzliche Informationen</h3>
+                <ul>
+                    <li>Die Zimmerpreise beinhalten immer ein reichhaltiges Frühstück.</li>
+                    <li>Frühstück von 8:00 Uhr - 10:00 Uhr.</li>
+                    <li>WLAN vorhanden.</li>
+                    <li>Kurabgabe pro Tag und Person ab 14 Jahren: 1 €.</li>
+                    <li>Hunde auf Anfrage gegen Aufpreis von 7 € pro Tag.</li>
+                    <li>Babyreisebett auf Anfrage gegen Aufpreis von 5 € pro Tag.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Image Gallery Section -->
+        <div class="image-container">
+            <h3>Bildergalerie</h3>
+            <div class="gallery">
+                <img src="../../../res/EtagenBad.JPG" alt="Etagen Bad" />
+                <img src="../../../res/Frühstücksraum.JPG" alt="Frühstücksraum" />
+                <img src="../../../res/HausFront.JPG" alt="Haus Front" />
+                <img src="../../../res/HausFrontSchild.JPG" alt="Haus Front Schild" />
+                <img src="../../../res/Zimmer3.JPG" alt="Zimmer 3" />
+                <img src="../../../res/Zimmer5.JPG" alt="Zimmer 5" />
+                <img src="../../../res/EtagenBad2.jpeg" alt="Etagen Bad 2" />
+                <img src="../../../res/Frühstücksraum2.jpg" alt="Frühstücksraum 2" />
+                <img src="../../../res/HausFront2.jpeg" alt="Haus Front 2" />
+                <img src="../../../res/HausWaldLage.JPG" alt="Haus Wald Lage" />
+                <img src="../../../res/Zimmer3_2.JPG" alt="Zimmer 3 2" />
+                <img src="../../../res/Zimmer6.JPG" alt="Zimmer 6" />
+                <img src="../../../res/EtagenWc.JPG" alt="Etagen WC" />
+
+                <img src="../../../res/HausFrontGarten.JPG" alt="Haus Front Garten" />
+                <img src="../../../res/Zimmer2.JPG" alt="Zimmer 2" />
+                <img src="../../../res/Zimmer4.JPG" alt="Zimmer 4" />
+                <img src="../../../res/Zimmer6_2.JPG" alt="Zimmer 6 2" />
             </div>
         </div>
     </div>
 </template>
 
-<script>
-export default {
-    name: 'RoomsView',
-    data() {
-        return {
-            currentIndex: 0,
-            totalImages: 12,  // Update to the number of images you have (12 images now)
-        };
-    },
-    methods: {
-        moveToPrev() {
-            this.currentIndex = (this.currentIndex === 0) ? this.totalImages - 1 : this.currentIndex - 1;
-        },
-        moveToNext() {
-            this.currentIndex = (this.currentIndex === this.totalImages - 1) ? 0 : this.currentIndex + 1;
-        },
-    },
-};
+<script setup lang="ts">
+import BedIcon from 'vue-material-design-icons/BedOutline.vue';  // Replacing HotelIcon with BedIcon
 </script>
 
 <style scoped>
-/* Prevent vertical and horizontal scrollbars */
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
 .rooms-view {
-    padding: 20px;
-}
-
-.main-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: auto;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.text-container {
-    width: 45%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.text-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.text-container p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-}
-
-.text-container h3 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
     color: #333;
 }
 
-.carousel {
-    width: 50%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
+.main-container {
+    flex: 1 1 60%;
+    /* Ensures the main content takes up 60% of the width */
 }
 
-.carousel-images {
-    display: flex;
-    flex-direction: row;
-    transition: transform 0.5s ease-in-out;
+.image-container {
+    flex: 1 1 35%;
+    /* Ensures the image container takes up 35% of the width */
+    padding-left: 2rem;
+    overflow-y: auto;
 }
 
-.hero {
+h1 {
+    text-align: center;
+    color: #008c05;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #007d03;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.room-type {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.room-type .icon {
+    color: #008c05;
+    margin-right: 1rem;
+}
+
+.room-description p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.pricing p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.pricing strong {
+    font-weight: 700;
+}
+
+.additional-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.additional-info li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+.info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.gallery img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-/* Mobile Styles */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .main-container {
+    .rooms-view {
         flex-direction: column;
-        align-items: center;
     }
 
-    .text-container {
-        width: 80%;
-        text-align: center;
+    .main-container {
+        flex: 1 1 100%;
     }
 
-    .carousel {
-        width: 80%;
+    .image-container {
+        flex: 1 1 100%;
+        padding-left: 0;
     }
 
-    .hero {
-        width: 100%;
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .room-description p,
+    .pricing p,
+    .additional-info li {
+        font-size: 1.1rem;
+    }
+
+    .room-type {
+        padding: 1.5rem;
     }
 }
 </style>

@@ -189,7 +189,6 @@ export default {
 <style scoped>
 .agb {
     padding: 5px;
-    max-width: 1200px;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
 }

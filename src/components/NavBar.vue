@@ -1,12 +1,22 @@
 <template>
-    <nav class="navbar">
-        <router-link to="/" exact-active-class="active">Gästehaus</router-link>
-        <router-link to="/about" exact-active-class="active">Über Uns</router-link>
-        <router-link to="/rooms" exact-active-class="active">Zimmer & Preise</router-link>
-        <router-link to="/links" exact-active-class="active">Tourismus</router-link>
-        <router-link to="/agb" exact-active-class="active">AGB</router-link>
-        <router-link to="/impressum" exact-active-class="active">Impressum</router-link>
-    </nav>
+    <div class="navbar">
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <router-link to="/">
+                <img src="../../res/GrauLogo.png" alt="Gästehaus Grau Logo" class="logo" />
+            </router-link>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <router-link to="/" active-class="active">Gästehaus</router-link>
+            <router-link to="/about" active-class="active">Über Uns</router-link>
+            <router-link to="/rooms" active-class="active">Zimmer & Preise</router-link>
+            <router-link to="/tourismus" active-class="active">Tourismus</router-link>
+            <router-link to="/agb" active-class="active">AGB</router-link>
+            <router-link to="/impressum" active-class="active">Impressum</router-link>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -16,70 +26,82 @@ export default {
 </script>
 
 <style scoped>
+/* Navbar Container */
 .navbar {
-    font-size: 2rem;
-    /* Scalable font size */
-    width: 20vw;
-    /* 20% of viewport width, makes it more flexible */
-    max-width: 250px;
-    /* Ensures it doesn't become too wide on larger screens */
     background-color: #ffffff;
-    padding: 1.5rem;
-    /* Padding in rem for flexibility */
+    height: 100%;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    /* Space between items in rem */
-    justify-content: center;
-    /* Vertically center the items */
-    align-items: center;
-    max-height: 90vh;
-    /* Prevent navbar from becoming too tall */
     overflow-y: auto;
-    /* Enable vertical scrolling when content exceeds the height */
 }
 
+/* Logo Section */
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Link Styling */
 .navbar a {
     color: #333;
     text-decoration: none;
     padding: 0.8rem 1.2rem;
-    /* Scalable padding */
     border-radius: 5px;
     transition: background-color 0.3s;
     font-size: 1.2rem;
-    /* Ensure links are responsive */
 }
 
 .navbar a:hover {
     background-color: #ddd;
 }
 
-/* Active link styles */
+/* Active Link Styles */
 .navbar .active {
     background-color: #008c05d4;
     color: white;
     font-weight: bold;
 }
 
-/* Mobile-first approach */
+/* Mobile Styles */
 @media (max-width: 768px) {
     .navbar {
         width: 100%;
-        /* Full width for smaller screens */
         padding: 1rem;
-        /* Less padding on mobile */
+    }
+
+    .logo-container {
+        margin-bottom: 1rem;
     }
 
     .navbar a {
         font-size: 0.9rem;
-        /* Slightly smaller font on mobile */
         padding: 0.8rem;
-        /* Less padding on mobile */
     }
 
     .navbar .active {
         font-size: 1rem;
-        /* Ensure the active link font size is readable on mobile */
     }
 }
 </style>
