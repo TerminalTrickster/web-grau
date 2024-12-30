@@ -5,4 +5,5 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   plugins: [vue()],
   base: '/web-grau/',
+  assetsInclude: ['**/*.JPG', '**/*.JPEG', '**/*.png', '**/*.gif', '**/*.svg'], // Add other image formats as needed
 });
