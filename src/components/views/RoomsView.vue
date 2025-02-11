@@ -40,7 +40,7 @@
                     <p>mit Etagendusche/TV/Handtücher und Waschgelegenheit im Zimmer</p>
                     <div class="pricing">
                         <p><strong>bis 3 Tage:</strong> 31,00 €</p>
-                        <p><strong>ab 4 Tage:</strong> 20,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 29,00 €</p>
                     </div>
                 </div>
             </section>
@@ -53,7 +53,7 @@
                     <li>WLAN vorhanden.</li>
                     <li>Kurabgabe pro Tag und Person ab 14 Jahren: 1 €.</li>
                     <li>Hunde auf Anfrage gegen Aufpreis von 8 € pro Tag.</li>
-                    <li>Babyreisebett auf Anfrage gegen Aufpreis von 5 € pro Tag.</li>
+                    <li>Babyreisebett auf Anfrage gegen Aufpreis von 6 € pro Tag.</li>
                 </ul>
             </section>
         </div>
