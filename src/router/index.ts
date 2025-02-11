@@ -41,7 +41,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/web-grau/'),
+  history: createWebHistory('/'),
   routes,
 });
 
