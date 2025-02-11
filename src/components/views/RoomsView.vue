@@ -15,8 +15,8 @@
                 <div class="room-description">
                     <p>mit WC/Dusche/TV/Balkon/Föhn/Handtücher <br> (Zimmer 4 mit Schlafcouch für Kinder)</p>
                     <div class="pricing">
-                        <p><strong>bis 3 Tage:</strong> 30,00 €</p>
-                        <p><strong>ab 4 Tage:</strong> 28,00 €</p>
+                        <p><strong>bis 3 Tage:</strong> 32,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 30,00 €</p>
                     </div>
                 </div>
             </section>
@@ -27,8 +27,8 @@
                 <div class="room-description">
                     <p>mit Etagendusche/TV/Balkon/Föhn/Handtücher und Waschgelegenheit im Zimmer</p>
                     <div class="pricing">
-                        <p><strong>bis 3 Tage:</strong> 29,00 €</p>
-                        <p><strong>ab 4 Tage:</strong> 27,00 €</p>
+                        <p><strong>bis 3 Tage:</strong> 31,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 29,00 €</p>
                     </div>
                 </div>
             </section>
@@ -39,8 +39,8 @@
                 <div class="room-description">
                     <p>mit Etagendusche/TV/Handtücher und Waschgelegenheit im Zimmer</p>
                     <div class="pricing">
-                        <p><strong>bis 3 Tage:</strong> 29,00 €</p>
-                        <p><strong>ab 4 Tage:</strong> 27,00 €</p>
+                        <p><strong>bis 3 Tage:</strong> 31,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 20,00 €</p>
                     </div>
                 </div>
             </section>
@@ -52,7 +52,7 @@
                     <li>Frühstück von 8:00 Uhr - 10:00 Uhr.</li>
                     <li>WLAN vorhanden.</li>
                     <li>Kurabgabe pro Tag und Person ab 14 Jahren: 1 €.</li>
-                    <li>Hunde auf Anfrage gegen Aufpreis von 7 € pro Tag.</li>
+                    <li>Hunde auf Anfrage gegen Aufpreis von 8 € pro Tag.</li>
                     <li>Babyreisebett auf Anfrage gegen Aufpreis von 5 € pro Tag.</li>
                 </ul>
             </section>
