@@ -6,7 +6,6 @@
                 <img src="../../res/GrauLogo.png" alt="Gästehaus Grau Logo" class="logo" />
             </router-link>
         </div>
-
         <!-- Navigation Links -->
         <div class="nav-links">
             <router-link to="/" active-class="active">Gästehaus</router-link>
@@ -21,6 +20,7 @@
 
 <script>
 export default {
+    // eslint-disable-next-line vue/multi-word-component-names
     name: 'Navbar',
 };
 </script>

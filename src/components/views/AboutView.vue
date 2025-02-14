@@ -82,11 +82,27 @@ import ParkingIcon from 'vue-material-design-icons/CarOutline.vue';
                 </div>
                 <div class="item">
                     <MapMarkerIcon class="icon" :size="40" />
-                    <p>Krankenhaus, Forchheim - 17 km</p>
+                    <p>Krankenhaus, Ebermannstadt - 14 km</p>
                 </div>
                 <div class="item">
                     <MapMarkerIcon class="icon" :size="40" />
-                    <p>Krankenhaus, Ebermannstadt - 14 km</p>
+                    <p>Forchheim (Krankenhaus) - 17 km</p>
+                </div>
+                <div class="item">
+                    <MapMarkerIcon class="icon" :size="40" />
+                    <p>Erlangen - 34km</p>
+                </div>
+                <div class="item">
+                    <MapMarkerIcon class="icon" :size="40" />
+                    <p>Bamberg - 48km</p>
+                </div>
+                <div class="item">
+                    <MapMarkerIcon class="icon" :size="40" />
+                    <p>Nürnberg Messe - 50km</p>
+                </div>
+                <div class="item">
+                    <MapMarkerIcon class="icon" :size="40" />
+                    <p>Bayreuth (Festspiele) - 55km</p>
                 </div>
             </div>
         </section>
@@ -112,7 +128,6 @@ import ParkingIcon from 'vue-material-design-icons/CarOutline.vue';
 <style scoped>
 .about-view {
     padding: 3rem;
-    max-width: 2000px;
     margin: 0 auto;
     background-color: #f9f9f9;
     border-radius: 12px;

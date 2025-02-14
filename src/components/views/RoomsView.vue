@@ -70,16 +70,14 @@
                 <img src="../../../res/Zimmer5.JPG" alt="Zimmer 5" />
                 <img src="../../../res/EtagenBad2.jpeg" alt="Etagen Bad 2" />
                 <img src="../../../res/Frühstücksraum2.jpg" alt="Frühstücksraum 2" />
-                <img src="../../../res/HausFront2.jpeg" alt="Haus Front 2" />
                 <img src="../../../res/HausWaldLage.JPG" alt="Haus Wald Lage" />
-                <img src="../../../res/Zimmer3_2.JPG" alt="Zimmer 3 2" />
+                <img src="../../../res/Zimmer3_2.JPG" alt="Zimmer 3 Bild 2" />
                 <img src="../../../res/Zimmer6.JPG" alt="Zimmer 6" />
                 <img src="../../../res/EtagenWc.JPG" alt="Etagen WC" />
-
                 <img src="../../../res/HausFrontGarten.JPG" alt="Haus Front Garten" />
                 <img src="../../../res/Zimmer2.JPG" alt="Zimmer 2" />
                 <img src="../../../res/Zimmer4.JPG" alt="Zimmer 4" />
-                <img src="../../../res/Zimmer6_2.JPG" alt="Zimmer 6 2" />
+                <img src="../../../res/Zimmer6_2.JPG" alt="Zimmer 6 Bild 2" />
             </div>
         </div>
     </div>

@@ -47,18 +47,32 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
     height: 100%;
     background-color: #AFD5AA;
     /* Lighter green - like Bavarian forest */
-    border-radius: 15px;
+    border-radius: 1vh;
 }
 
 /* Oberer Bereich */
 .footer-main {
-    height: 40%;
+    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 3%;
+    padding: 0vw 1vw;
     flex-wrap: wrap;
+    max-height: 70%;
     /* Allow icon groups to wrap on small screens */
+}
+
+/* Unterer Bereich */
+.footer-sub {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f5d3b;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #ced4da;
+    flex-wrap: wrap;
+    max-height: 30%;
 }
 
 .icon-group {
@@ -66,7 +80,7 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 0.5rem;
+    margin: 0;
 }
 
 .icon {
@@ -87,18 +101,7 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
     color: #333;
 }
 
-/* Unterer Bereich */
-.footer-sub {
-    height: 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2f5d3b;
-    padding: 0.5rem 1rem;
-    border-top: 1px solid #ced4da;
-    flex-wrap: wrap;
-    margin-top: 3%;
-}
+
 
 .footer-text {
     font-size: 1rem;

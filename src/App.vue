@@ -67,8 +67,7 @@ body {
 
 #footer {
   height: 17vh;
-  /* Set the footer height to 15% of the viewport height */
-  width: 100%;
+  width: 100vw;
   background-color: #f1f1f1;
   /* Optional: you can add more styling for the footer */
 }
