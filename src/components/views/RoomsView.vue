@@ -9,6 +9,7 @@
                 <p><strong>!! ausschließlich Barzahlung möglich !!</strong></p>
             </div>
 
+            <!-- Room 2 and 4 -->
             <section class="room-type">
                 <h3>2 Doppelzimmer (Zimmer 2 und 4)</h3>
                 <BedIcon class="icon" :size="40" />
@@ -19,8 +20,14 @@
                         <p><strong>ab 4 Tage:</strong> 30,00 €</p>
                     </div>
                 </div>
+                <!-- Image Gallery for Room 2 and 4 -->
+                <div class="room-images">
+                    <img src="../../../res/Zimmer2.JPG" alt="Zimmer 2" @click="openModal('../../../res/Zimmer2.JPG')" />
+                    <img src="../../../res/Zimmer4.JPG" alt="Zimmer 4" @click="openModal('../../../res/Zimmer4.JPG')" />
+                </div>
             </section>
 
+            <!-- Room 3 -->
             <section class="room-type">
                 <h3>1 Doppelzimmer (Zimmer 3)</h3>
                 <BedIcon class="icon" :size="40" />
@@ -31,8 +38,15 @@
                         <p><strong>ab 4 Tage:</strong> 29,00 €</p>
                     </div>
                 </div>
+                <!-- Image Gallery for Room 3 -->
+                <div class="room-images">
+                    <img src="../../../res/Zimmer3.JPG" alt="Zimmer 3" @click="openModal('../../../res/Zimmer3.JPG')" />
+                    <img src="../../../res/Zimmer3_2.JPG" alt="Zimmer 3 Bild 2"
+                        @click="openModal('../../../res/Zimmer3_2.JPG')" />
+                </div>
             </section>
 
+            <!-- Room 1 and 5 -->
             <section class="room-type">
                 <h3>2 Einzelzimmer (Zimmer 1 und 5)</h3>
                 <BedIcon class="icon" :size="40" />
@@ -43,8 +57,16 @@
                         <p><strong>ab 4 Tage:</strong> 29,00 €</p>
                     </div>
                 </div>
+                <!-- Image Gallery for Room 1 and 5 -->
+                <div class="room-images">
+                    <img src="../../../res/Zimmer5.JPG" alt="Zimmer 5" @click="openModal('../../../res/Zimmer5.JPG')" />
+                    <img src="../../../res/Zimmer6.JPG" alt="Zimmer 6" @click="openModal('../../../res/Zimmer6.JPG')" />
+                    <img src="../../../res/Zimmer6_2.JPG" alt="Zimmer 6 Bild 2"
+                        @click="openModal('../../../res/Zimmer6_2.JPG')" />
+                </div>
             </section>
 
+            <!-- Additional Information -->
             <section class="additional-info">
                 <h3>Zusätzliche Informationen</h3>
                 <ul>
@@ -56,35 +78,54 @@
                     <li>Babyreisebett auf Anfrage gegen Aufpreis von 6 € pro Tag.</li>
                 </ul>
             </section>
+
+
+            <h3>Weitere Bilder</h3>
+            <div class="room-images">
+                <img src="../../../res/HausFrontSchild.JPG" alt="Haus Front Schild"
+                    @click="openModal('../../../res/HausFrontSchild.JPG')" />
+                <img src="../../../res/HausFront.JPG" alt="Haus Front"
+                    @click="openModal('../../../res/HausFront.JPG')" />
+                <img src="../../../res/Frühstücksraum.JPG" alt="Frühstücksraum"
+                    @click="openModal('../../../res/Frühstücksraum.JPG')" />
+                <img src="../../../res/Frühstücksraum2.jpg" alt="Frühstücksraum 2"
+                    @click="openModal('../../../res/Frühstücksraum2.jpg')" />
+                <img src="../../../res/HausWaldLage.JPG" alt="Haus Wald Lage"
+                    @click="openModal('../../../res/HausWaldLage.JPG')" />
+                <img src="../../../res/HausFrontGarten.JPG" alt="Haus Front Garten"
+                    @click="openModal('../../../res/HausFrontGarten.JPG')" />
+                <img src="../../../res/EtagenBad.JPG" alt="Etagen Bad"
+                    @click="openModal('../../../res/EtagenBad.JPG')" />
+                <img src="../../../res/EtagenBad2.jpeg" alt="Etagen Bad 2"
+                    @click="openModal('../../../res/EtagenBad2.jpeg')" />
+                <img src="../../../res/EtagenWc.JPG" alt="Etagen WC" @click="openModal('../../../res/EtagenWc.JPG')" />
+            </div>
         </div>
 
-        <!-- Image Gallery Section -->
-        <div class="image-container">
-            <h3>Bildergalerie</h3>
-            <div class="gallery">
-                <img src="../../../res/EtagenBad.JPG" alt="Etagen Bad" />
-                <img src="../../../res/Frühstücksraum.JPG" alt="Frühstücksraum" />
-                <img src="../../../res/HausFront.JPG" alt="Haus Front" />
-                <img src="../../../res/HausFrontSchild.JPG" alt="Haus Front Schild" />
-                <img src="../../../res/Zimmer3.JPG" alt="Zimmer 3" />
-                <img src="../../../res/Zimmer5.JPG" alt="Zimmer 5" />
-                <img src="../../../res/EtagenBad2.jpeg" alt="Etagen Bad 2" />
-                <img src="../../../res/Frühstücksraum2.jpg" alt="Frühstücksraum 2" />
-                <img src="../../../res/HausWaldLage.JPG" alt="Haus Wald Lage" />
-                <img src="../../../res/Zimmer3_2.JPG" alt="Zimmer 3 Bild 2" />
-                <img src="../../../res/Zimmer6.JPG" alt="Zimmer 6" />
-                <img src="../../../res/EtagenWc.JPG" alt="Etagen WC" />
-                <img src="../../../res/HausFrontGarten.JPG" alt="Haus Front Garten" />
-                <img src="../../../res/Zimmer2.JPG" alt="Zimmer 2" />
-                <img src="../../../res/Zimmer4.JPG" alt="Zimmer 4" />
-                <img src="../../../res/Zimmer6_2.JPG" alt="Zimmer 6 Bild 2" />
+        <!-- Image Modal (Zoom) -->
+        <div v-if="showModal" class="modal" @click="closeModal">
+            <div class="modal-content">
+                <img :src="currentImage" alt="Room Image" />
             </div>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import BedIcon from 'vue-material-design-icons/BedOutline.vue';  // Replacing HotelIcon with BedIcon
+import { ref } from 'vue';
+import BedIcon from 'vue-material-design-icons/BedOutline.vue';
+
+const showModal = ref(false);
+const currentImage = ref('');
+
+const openModal = (imageUrl: string) => {
+    currentImage.value = imageUrl;
+    showModal.value = true;
+};
+
+const closeModal = () => {
+    showModal.value = false;
+};
 </script>
 
 <style scoped>
@@ -99,128 +140,85 @@ import BedIcon from 'vue-material-design-icons/BedOutline.vue';  // Replacing Ho
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
     color: #333;
+    justify-content: center;
+    /* Ensure all content is centered */
 }
 
-.main-container {
-    flex: 1 1 60%;
-    /* Ensures the main content takes up 60% of the width */
-}
-
-.image-container {
-    flex: 1 1 35%;
-    /* Ensures the image container takes up 35% of the width */
-    padding-left: 2rem;
-    overflow-y: auto;
-}
-
-h1 {
-    text-align: center;
-    color: #008c05;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 2rem;
-    color: #007d03;
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.room-type {
-    margin-top: 2rem;
-    padding: 2rem;
-    background-color: #ffffff;
+.room-images img {
+    width: 80%;
+    margin: 5px;
+    /* Reduce size of gallery images */
+    max-width: 700px;
+    /* Set max width for gallery images */
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.room-type .icon {
-    color: #008c05;
-    margin-right: 1rem;
+.room-images img:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
 }
 
-.room-description p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    /* Initially hidden */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
 }
 
-.pricing p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    color: #333;
+.modal.show {
+    visibility: visible;
+    /* Make visible when 'show' class is added */
+    opacity: 1;
+    /* Fade in effect */
 }
 
-.pricing strong {
-    font-weight: 700;
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    /* Ensure it doesn't go out of the screen */
+    max-height: 80%;
+    /* Max height to avoid taking up too much screen space */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.additional-info ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.additional-info li {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-section {
-    margin-top: 2rem;
-}
-
-.info p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-/* Gallery Styles */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-    justify-items: center;
-}
-
-.gallery img {
+.modal-content img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: zoom-out;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .rooms-view {
-        flex-direction: column;
-    }
+/* For the closing button inside the modal */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 
-    .main-container {
-        flex: 1 1 100%;
-    }
-
-    .image-container {
-        flex: 1 1 100%;
-        padding-left: 0;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h3 {
-        font-size: 1.8rem;
-    }
-
-    .room-description p,
-    .pricing p,
-    .additional-info li {
-        font-size: 1.1rem;
-    }
-
-    .room-type {
-        padding: 1.5rem;
-    }
+.close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 </style>

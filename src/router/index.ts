@@ -38,6 +38,10 @@ const routes = [
     name: 'Rooms',
     component: RoomsView, // Zimmer Seite
   },
+  {
+    path: '/:pathMatch(.*)*',
+    component: MainView,
+  },
 ];
 
 const router = createRouter({
