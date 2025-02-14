@@ -1,14 +1,18 @@
 <template>
-  <div id="main">
-    <div id="left">
-      <NavBar></NavBar>
+  <div id="vertical">
+    <div id="top">
+      <div id="horizontal">
+        <div id="left">
+          <NavBar></NavBar>
+        </div>
+        <div id="right">
+          <router-view></router-view>
+        </div>
+      </div>
     </div>
-    <div id="right">
-      <router-view></router-view>
+    <div id="bottom">
+      <PageFooter></PageFooter>
     </div>
-  </div>
-  <div id="footer">
-    <PageFooter></PageFooter>
   </div>
 </template>
 
@@ -18,57 +22,40 @@ import PageFooter from './components/PageFooter.vue';
 </script>
 
 <style>
-html,
+#app {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  height: 100%;
-  /* Ensure full height of the page */
-  overflow: hidden;
 }
 
-#app {
+#vertical {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-#main {
-  display: flex;
+#top {
   flex-grow: 1;
-  /* Take up the remaining space */
-  width: 100%;
-  overflow: hidden;
+}
+
+#horizontal {
+  display: flex;
+  flex-direction: row;
 }
 
 #left {
-  width: 17vw;
-  min-width: 50px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid #e0e0e0;
+  min-width: min-content;
+  width: 20%;
+  height: fit-content;
+  overflow-y: auto;
 }
 
 #right {
-  width: 83vw;
+  margin-left: 5%;
+  width: 80%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  /* Enable vertical scrolling if content overflows */
-  padding: 1%;
-}
-
-#footer {
-  height: 17vh;
-  width: 100vw;
-  background-color: #f1f1f1;
-  /* Optional: you can add more styling for the footer */
+  overflow-y: au;
 }
 </style>

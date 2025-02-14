@@ -30,7 +30,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     background-color: #f9f9f9;
     font-family: 'Arial', sans-serif;
     border-radius: 12px;

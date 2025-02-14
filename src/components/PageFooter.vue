@@ -6,7 +6,7 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
 
 <template>
     <footer class="footer">
-        <!-- Oberer Bereich des Footers -->
+        <!-- Upper part of the footer -->
         <div class="footer-main">
             <div class="icon-group">
                 <a :href="'mailto:gaestehaus-grau@gmx.de'">
@@ -29,7 +29,7 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
             </div>
         </div>
 
-        <!-- Unterer Bereich des Footers -->
+        <!-- Lower part of the footer -->
         <div class="footer-sub">
             <p class="footer-text">© 2024 Gästehaus Grau - Alle Rechte vorbehalten</p>
             <div class="footer-links">
@@ -39,18 +39,18 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
         </div>
     </footer>
 </template>
+
 <style scoped>
-/* Footer-Stil */
+/* Footer Style */
 .footer {
     display: flex;
     flex-direction: column;
-    height: 100%;
     background-color: #AFD5AA;
-    /* Lighter green - like Bavarian forest */
+    /* Lighter green */
     border-radius: 1vh;
 }
 
-/* Oberer Bereich */
+/* Upper part */
 .footer-main {
     flex: 1;
     display: flex;
@@ -62,7 +62,7 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
     /* Allow icon groups to wrap on small screens */
 }
 
-/* Unterer Bereich */
+/* Lower part */
 .footer-sub {
     display: flex;
     flex: 1;
@@ -97,11 +97,8 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
     margin: 0;
     font-size: 1.2rem;
     font-weight: lighter;
-    /* Adjusted for scaling */
     color: #333;
 }
-
-
 
 .footer-text {
     font-size: 1rem;
@@ -128,12 +125,17 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+
+    /* For the main footer section */
     .footer-main {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        padding: 1rem;
+        /* Adjust padding for mobile */
     }
 
+    /* For the footer sub section */
     .footer-sub {
         flex-direction: column;
         align-items: center;
@@ -141,6 +143,7 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
         margin-top: 3%;
     }
 
+    /* For footer links on mobile */
     .footer-links {
         flex-direction: column;
         gap: 1rem;
@@ -153,6 +156,18 @@ import MapMarkerIcon from 'vue-material-design-icons/MapMarkerOutline.vue';
 
     .footer-text {
         font-size: 0.9rem;
+    }
+
+    /* Ensuring the footer sections stack properly */
+    .icon-group {
+        width: 100%;
+        /* Take full width for mobile */
+        text-align: center;
+    }
+
+    .footer-main .icon-group {
+        margin-bottom: 1rem;
+        /* Space between icon groups */
     }
 }
 </style>
