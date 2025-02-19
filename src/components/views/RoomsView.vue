@@ -60,9 +60,6 @@
                 <!-- Image Gallery for Room 1 and 5 -->
                 <div class="room-images">
                     <img src="../../../res/Zimmer5.JPG" alt="Zimmer 5" @click="openModal('../../../res/Zimmer5.JPG')" />
-                    <img src="../../../res/Zimmer6.JPG" alt="Zimmer 6" @click="openModal('../../../res/Zimmer6.JPG')" />
-                    <img src="../../../res/Zimmer6_2.JPG" alt="Zimmer 6 Bild 2"
-                        @click="openModal('../../../res/Zimmer6_2.JPG')" />
                 </div>
             </section>
 
