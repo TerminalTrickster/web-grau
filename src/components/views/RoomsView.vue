@@ -8,62 +8,6 @@
                 <p><strong>Check-Out:</strong> bis 10:30 Uhr</p>
                 <p><strong>!! ausschließlich Barzahlung möglich !!</strong></p>
             </div>
-
-            <!-- Room 2 and 4 -->
-            <section class="room-type">
-                <h3>2 Doppelzimmer (Zimmer 2 und 4)</h3>
-                <BedIcon class="icon" :size="40" />
-                <div class="room-description">
-                    <p>mit WC/Dusche/TV/Balkon/Föhn/Handtücher <br> (Zimmer 4 mit Schlafcouch für Kinder)</p>
-                    <div class="pricing">
-                        <p><strong>bis 3 Tage:</strong> 32,00 €</p>
-                        <p><strong>ab 4 Tage:</strong> 30,00 €</p>
-                    </div>
-                </div>
-                <!-- Image Gallery for Room 2 and 4 -->
-                <div class="room-images">
-                    <img src="../../../res/Zimmer2.JPG" alt="Zimmer 2" @click="openModal('../../../res/Zimmer2.JPG')" />
-                    <img src="../../../res/Zimmer4.JPG" alt="Zimmer 4" @click="openModal('../../../res/Zimmer4.JPG')" />
-                </div>
-            </section>
-
-            <!-- Room 3 -->
-            <section class="room-type">
-                <h3>1 Doppelzimmer (Zimmer 3)</h3>
-                <BedIcon class="icon" :size="40" />
-                <div class="room-description">
-                    <p>mit Etagendusche/TV/Balkon/Föhn/Handtücher und Waschgelegenheit im Zimmer</p>
-                    <div class="pricing">
-                        <p><strong>bis 3 Tage:</strong> 31,00 €</p>
-                        <p><strong>ab 4 Tage:</strong> 29,00 €</p>
-                    </div>
-                </div>
-                <!-- Image Gallery for Room 3 -->
-                <div class="room-images">
-                    <img src="../../../res/Zimmer3.JPG" alt="Zimmer 3" @click="openModal('../../../res/Zimmer3.JPG')" />
-                    <img src="../../../res/Zimmer3_2.JPG" alt="Zimmer 3 Bild 2"
-                        @click="openModal('../../../res/Zimmer3_2.JPG')" />
-                </div>
-            </section>
-
-            <!-- Room 1 and 5 -->
-            <section class="room-type">
-                <h3>2 Einzelzimmer (Zimmer 1 und 5)</h3>
-                <BedIcon class="icon" :size="40" />
-                <div class="room-description">
-                    <p>mit Etagendusche/TV/Handtücher und Waschgelegenheit im Zimmer</p>
-                    <div class="pricing">
-                        <p><strong>bis 3 Tage:</strong> 31,00 €</p>
-                        <p><strong>ab 4 Tage:</strong> 29,00 €</p>
-                    </div>
-                </div>
-                <!-- Image Gallery for Room 1 and 5 -->
-                <div class="room-images">
-                    <img src="../../../res/Zimmer5.JPG" alt="Zimmer 5" @click="openModal('../../../res/Zimmer5.JPG')" />
-                    <img src="../../../res/Zimmer1.JPG" alt="Zimmer 5" @click="openModal('../../../res/Zimmer1.JPG')" />
-                </div>
-            </section>
-
             <!-- Additional Information -->
             <section class="additional-info">
                 <h3>Zusätzliche Informationen</h3>
@@ -76,27 +20,90 @@
                     <li>Babyreisebett auf Anfrage gegen Aufpreis von 6 € pro Tag.</li>
                 </ul>
             </section>
+            <!-- Room 2 and 4 -->
+            <section class="room-type">
+                <h3>2 Doppelzimmer (Zimmer 2 und 4)</h3>
+                <BedIcon class="icon" :size="40" />
+                <div class="room-description">
+                    <p>mit WC / Dusche / TV / Balkon / Föhn / Handtücher <br> (Zimmer 4 mit Schlafsofa für Kinder)</p>
+                    <div class="pricing">
+                        <p><strong>bis 3 Tage:</strong> 32,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 30,00 €</p>
+                    </div>
+                </div>
+                <!-- Image Gallery for Room 2 and 4 -->
+                <div class="room-images">
+                    <div class="room-name">Zimmer 2</div>
+                    <img src="../../../res/Zimmer2.JPG" alt="Zimmer 2" @click="openModal('../../../res/Zimmer2.JPG')" />
 
+                    <div class="room-name">Zimmer 4</div>
+                    <img src="../../../res/Zimmer4.JPG" alt="Zimmer 4" @click="openModal('../../../res/Zimmer4.JPG')" />
+                </div>
+
+            </section>
+
+            <!-- Room 3 -->
+            <section class="room-type">
+                <h3>1 Doppelzimmer (Zimmer 3)</h3>
+                <BedIcon class="icon" :size="40" />
+                <div class="room-description">
+                    <p> mit <a href="#etagendusche-wc"> Etagendusche</a> / TV / Balkon / Föhn / Handtücher und
+                        Waschgelegenheit im Zimmer
+                    </p>
+                    <div class="pricing">
+                        <p><strong>bis 3 Tage:</strong> 31,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 29,00 €</p>
+                    </div>
+                </div>
+                <!-- Image Gallery for Room 3 -->
+                <div class="room-images">
+                    <div class="room-name">Zimmer 3</div>
+                    <img src="../../../res/Zimmer3.JPG" alt="Zimmer 3" @click="openModal('../../../res/Zimmer3.JPG')" />
+                    <img src="../../../res/Zimmer3_2.JPG" alt="Zimmer 3 Bild 2"
+                        @click="openModal('../../../res/Zimmer3_2.JPG')" />
+                </div>
+            </section>
+
+            <!-- Room 1 and 5 -->
+            <section class="room-type">
+                <h3>2 Einzelzimmer (Zimmer 1 und 5)</h3>
+                <BedIcon class="icon" :size="40" />
+                <div class="room-description">
+                    <p>mit <a href="#etagendusche-wc"> Etagendusche </a> / TV / Handtücher und Waschgelegenheit im
+                        Zimmer
+                    </p>
+                    <div class="pricing">
+                        <p><strong>bis 3 Tage:</strong> 31,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 29,00 €</p>
+                    </div>
+                </div>
+                <!-- Image Gallery for Room 1 and 5 -->
+                <div class="room-images">
+                    <div class="room-name">Zimmer 5</div>
+                    <img src="../../../res/Zimmer5.JPG" alt="Zimmer 5" @click="openModal('../../../res/Zimmer5.JPG')" />
+                    <div class="room-name">Zimmer 1</div>
+                    <img src="../../../res/Zimmer1.JPG" alt="Zimmer 5" @click="openModal('../../../res/Zimmer1.JPG')" />
+                </div>
+            </section>
+            <h3>Badezimmer</h3>
+            <div class="room-images" id="etagendusche-wc">
+                <div class="room-name">Etagendusche & WC </div>
+                <img src="../../../res/EtagenBad.JPG" alt="Etagen Bad"
+                    @click="openModal('../../../res/EtagenBad.JPG')" />
+                <div class="room-name">Extra WC </div>
+                <img src="../../../res/EtagenWc.JPG" alt="Etagen WC" @click="openModal('../../../res/EtagenWc.JPG')" />
+            </div>
 
             <h3>Weitere Bilder</h3>
             <div class="room-images">
                 <img src="../../../res/HausFrontSchild.JPG" alt="Haus Front Schild"
                     @click="openModal('../../../res/HausFrontSchild.JPG')" />
-                <img src="../../../res/HausFront.JPG" alt="Haus Front"
-                    @click="openModal('../../../res/HausFront.JPG')" />
-                <img src="../../../res/Frühstücksraum.JPG" alt="Frühstücksraum"
-                    @click="openModal('../../../res/Frühstücksraum.JPG')" />
                 <img src="../../../res/Frühstücksraum2.jpg" alt="Frühstücksraum 2"
                     @click="openModal('../../../res/Frühstücksraum2.jpg')" />
                 <img src="../../../res/HausWaldLage.JPG" alt="Haus Wald Lage"
                     @click="openModal('../../../res/HausWaldLage.JPG')" />
                 <img src="../../../res/HausFrontGarten.JPG" alt="Haus Front Garten"
                     @click="openModal('../../../res/HausFrontGarten.JPG')" />
-                <img src="../../../res/EtagenBad.JPG" alt="Etagen Bad"
-                    @click="openModal('../../../res/EtagenBad.JPG')" />
-                <img src="../../../res/EtagenBad2.jpeg" alt="Etagen Bad 2"
-                    @click="openModal('../../../res/EtagenBad2.jpeg')" />
-                <img src="../../../res/EtagenWc.JPG" alt="Etagen WC" @click="openModal('../../../res/EtagenWc.JPG')" />
             </div>
         </div>
 
@@ -142,6 +149,24 @@ const closeModal = () => {
     /* Ensure all content is centered */
 }
 
+.room-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* Space between room name and image */
+}
+
+.room-name {
+    font-size: 1rem;
+    font-weight: bold;
+    /* Use the color from h3 */
+    text-align: center;
+    /* Center the room name */
+    margin-bottom: 5px;
+    /* Space between name and image */
+}
+
 .room-images img {
     width: 80%;
     margin: 5px;
@@ -153,6 +178,10 @@ const closeModal = () => {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease;
+    display: block;
+    /* Ensures image is centered inside the div */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .room-images img:hover {
@@ -218,5 +247,10 @@ const closeModal = () => {
 
 .close-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1,
+h3 {
+    color: #007d03;
 }
 </style>
