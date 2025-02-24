@@ -88,8 +88,8 @@
                     <img src="../../../res/Zimmer1.JPG" alt="Zimmer 5" @click="openModal('../../../res/Zimmer1.JPG')" />
                 </div>
             </section>
-            <h3>Badezimmer - Etagendusche & Extra WC</h3>
-            <div class="bathroom-images" id="etagendusche-wc">
+            <h3 id="etagendusche-wc">Badezimmer - Etagendusche & Extra WC</h3>
+            <div class="bathroom-images">
                 <img src="../../../res/EtagenBad.JPG" alt="Etagen Bad"
                     @click="openModal('../../../res/EtagenBad.JPG')" />
                 <img src="../../../res/EtagenWc.JPG" alt="Etagen WC" @click="openModal('../../../res/EtagenWc.JPG')" />
