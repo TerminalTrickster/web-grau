@@ -22,7 +22,7 @@
             </section>
             <!-- Room 2 and 4 -->
             <section class="room-type">
-                <h3>2 Doppelzimmer (Zimmer 2 und 4)</h3>
+                <h3>Doppelzimmer mit eigenem Bad<br> Zimmer 2 und 4</h3>
                 <BedIcon class="icon" :size="40" />
                 <div class="room-description">
                     <p>mit WC / Dusche / TV / Balkon / Föhn / Handtücher <br> (Zimmer 4 mit Schlafsofa für Kinder)</p>
@@ -44,7 +44,9 @@
 
             <!-- Room 3 -->
             <section class="room-type">
-                <h3>1 Doppelzimmer (Zimmer 3)</h3>
+                <h3>Doppelzimmer mit Etagendusche
+                    <br>Zimmer 3
+                </h3>
                 <BedIcon class="icon" :size="40" />
                 <div class="room-description">
                     <p> mit <a href="#etagendusche-wc"> Etagendusche</a> / TV / Balkon / Föhn / Handtücher und
@@ -66,7 +68,8 @@
 
             <!-- Room 1 and 5 -->
             <section class="room-type">
-                <h3>2 Einzelzimmer (Zimmer 1 und 5)</h3>
+                <h3>Einzelzimmer mit Etagendusche <br>
+                    Zimmer 1 und 5</h3>
                 <BedIcon class="icon" :size="40" />
                 <div class="room-description">
                     <p>mit <a href="#etagendusche-wc"> Etagendusche </a> / TV / Handtücher und Waschgelegenheit im
@@ -85,12 +88,10 @@
                     <img src="../../../res/Zimmer1.JPG" alt="Zimmer 5" @click="openModal('../../../res/Zimmer1.JPG')" />
                 </div>
             </section>
-            <h3>Badezimmer</h3>
-            <div class="room-images" id="etagendusche-wc">
-                <div class="room-name">Etagendusche & WC </div>
+            <h3>Badezimmer - Etagendusche & Extra WC</h3>
+            <div class="bathroom-images" id="etagendusche-wc">
                 <img src="../../../res/EtagenBad.JPG" alt="Etagen Bad"
                     @click="openModal('../../../res/EtagenBad.JPG')" />
-                <div class="room-name">Extra WC </div>
                 <img src="../../../res/EtagenWc.JPG" alt="Etagen WC" @click="openModal('../../../res/EtagenWc.JPG')" />
             </div>
 
@@ -157,15 +158,6 @@ const closeModal = () => {
     /* Space between room name and image */
 }
 
-.room-name {
-    font-size: 1rem;
-    font-weight: bold;
-    /* Use the color from h3 */
-    text-align: center;
-    /* Center the room name */
-    margin-bottom: 5px;
-    /* Space between name and image */
-}
 
 .room-images img {
     width: 80%;
@@ -182,6 +174,40 @@ const closeModal = () => {
     /* Ensures image is centered inside the div */
     margin-left: auto;
     margin-right: auto;
+}
+
+.room-name {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    /* Increase the font size for better visibility */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Increase space between the title and the images */
+}
+
+.bathroom-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centers images horizontally */
+    align-items: center;
+    /* Ensures images are aligned in the center vertically */
+    margin-top: 20px;
+    /* Adds space above the images */
+}
+
+.bathroom-images img {
+    width: 50%;
+    /* Adjusted to make room for spacing */
+    margin: 10px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: block;
 }
 
 .room-images img:hover {
