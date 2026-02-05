@@ -6,7 +6,6 @@
                 <p><strong>pro Person und Nacht</strong></p>
                 <p><strong>Check-In:</strong> 14:00 Uhr - 20:00 Uhr</p>
                 <p><strong>Check-Out:</strong> bis 10:30 Uhr</p>
-                <br>
                 <p><strong>Ausschließlich Barzahlung möglich</strong></p>
                 <p><strong>Mindestaufenthalt: 2 Nächte</strong></p>
             </div>
