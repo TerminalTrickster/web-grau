@@ -1,7 +1,7 @@
 <template>
     <div class="rooms-view">
         <div class="main-container">
-            <h1>Zimmer Preise 2025</h1>
+            <h1>Zimmer Preise 2026</h1>
             <div class="info">
                 <p><strong>pro Person und Nacht</strong></p>
                 <p><strong>Check-In:</strong> 14:00 Uhr - 20:00 Uhr</p>
