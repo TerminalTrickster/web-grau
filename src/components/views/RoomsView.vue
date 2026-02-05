@@ -6,7 +6,9 @@
                 <p><strong>pro Person und Nacht</strong></p>
                 <p><strong>Check-In:</strong> 14:00 Uhr - 20:00 Uhr</p>
                 <p><strong>Check-Out:</strong> bis 10:30 Uhr</p>
-                <p><strong>!! ausschließlich Barzahlung möglich !!</strong></p>
+                <br>
+                <p><strong>Ausschließlich Barzahlung möglich</strong></p>
+                <p><strong>Mindestaufenthalt: 2 Nächte</strong></p>
             </div>
             <!-- Additional Information -->
             <section class="additional-info">
@@ -27,8 +29,8 @@
                 <div class="room-description">
                     <p>mit WC / Dusche / TV / Balkon / Föhn / Handtücher <br> (Zimmer 4 mit Schlafsofa für Kinder)</p>
                     <div class="pricing">
-                        <p><strong>bis 3 Tage:</strong> 32,00 €</p>
-                        <p><strong>ab 4 Tage:</strong> 30,00 €</p>
+                        <p><strong>bis 3 Tage:</strong> 34,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 32,00 €</p>
                     </div>
                 </div>
                 <!-- Image Gallery for Room 2 and 4 -->
@@ -53,8 +55,8 @@
                         Waschgelegenheit im Zimmer
                     </p>
                     <div class="pricing">
-                        <p><strong>bis 3 Tage:</strong> 31,00 €</p>
-                        <p><strong>ab 4 Tage:</strong> 29,00 €</p>
+                        <p><strong>bis 3 Tage:</strong> 33,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 31,00 €</p>
                     </div>
                 </div>
                 <!-- Image Gallery for Room 3 -->
@@ -76,8 +78,8 @@
                         Zimmer
                     </p>
                     <div class="pricing">
-                        <p><strong>bis 3 Tage:</strong> 31,00 €</p>
-                        <p><strong>ab 4 Tage:</strong> 29,00 €</p>
+                        <p><strong>bis 3 Tage:</strong> 33,00 €</p>
+                        <p><strong>ab 4 Tage:</strong> 31,00 €</p>
                     </div>
                 </div>
                 <!-- Image Gallery for Room 1 and 5 -->
